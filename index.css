@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/** Header **/
+
+body {
+    background-image: url("Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/** Logo **/
+
+.LOGO {
+    font-family: 'Sevillana', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 10px 5px 10px #d71bce;
+    padding-left: 10px;
+}
+
+/** Navbar **/
+
+#navbar {
+    font-size: 30px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid black;
+}
+
+.nav-element {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+
+/** Hover **/
+
+.nav-h:hover {
+    background-color: #A1EEBD;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/** Active **/
+
+.nav-a:active {
+    background-color: #F6F7C4;
+}
+
+/** Footer **/
+
+
+.copyright {
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    font-size: 20px;
+    border-top: 2px solid black;
+    background-color: rgba(161, 238, 189, 0.7);
+}
+
+/** Main **/
+
+main {
+    padding-top: 60px;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+}
+
+.my-self {
+    z-index: -1;
+    height: 300px;
+    width: 350px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}
+
+.highlighter {
+    height: 225px;
+    width: 400px;
+    z-index: -2;
+    background-image: url("Highlight.png");
+    background-size: cover;
+    opacity: 0.6;
+    position: absolute;
+    top: 225px;
+    left: 270px;
+    filter: drop-shadow(20px 30px 50px rgba(161, 238, 189, 0.9));
+}
+
+img {
+    height: 500px;
+    background-size: cover;
+    position: absolute;
+    right: 60px;
+    top: 80px;
+    z-index: -1;
+    filter: drop-shadow(5px 20px 50px rgba(64, 56, 56, 0.851));
+}
